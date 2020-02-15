@@ -1,7 +1,4 @@
-# b/145484387
-dontaudit vendor_init camera_prop:property_service set;
-
-# b/145485380
+# b/149382719
 dontaudit vendor_init debugfs:file write;
 
 # b/145485815

@@ -11,8 +11,10 @@ userdebug_or_eng(`
   allow vendor_subsystem_ramdump ramdump_vendor_data_file:file create_file_perms;
   allow vendor_subsystem_ramdump ramdump_vendor_data_file:dir rw_dir_perms;
 
+  r_dir_file(vendor_subsystem_ramdump, sysfs_ssr)
   r_dir_file(vendor_subsystem_ramdump, sysfs_msm_subsys)
 
+  allow vendor_subsystem_ramdump sysfs_ssr:dir search;
   allow vendor_subsystem_ramdump sysfs_ssr:file r_file_perms;
 
   allow vendor_subsystem_ramdump ssr_log_file:dir rw_dir_perms;

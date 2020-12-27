@@ -17,6 +17,8 @@ allow hal_wifi_ext wifihal_socket:sock_file create_file_perms;
 allow hal_wifi_ext location_socket:dir search;
 allow hal_wifi_ext location_socket:sock_file write;
 
+allow hal_wifi_ext debugfs_wlan:dir search;
+
 # Write wlan driver/fw version into property
 set_prop(hal_wifi_ext, vendor_wifi_version)
 

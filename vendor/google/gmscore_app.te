@@ -1,0 +1,3 @@
+# Binder
+allow gmscore_app firmware_file:dir r_dir_perms;
+allow gmscore_app firmware_file:filesystem getattr;

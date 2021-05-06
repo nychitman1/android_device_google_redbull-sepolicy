@@ -1,0 +1,2 @@
+# Allow Device Personalization Services to read soc_id
+allow priv_app sysfs_soc:file read;

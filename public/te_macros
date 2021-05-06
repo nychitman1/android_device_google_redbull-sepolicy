@@ -1,0 +1,9 @@
+
+#####################################
+# search_dir_read_file(qmipriod, sysfs_soc)
+#
+# Allow singe call to search dir and open/read/write file.
+define(`search_dir_read_file', `
+  allow $1 $2:dir search;
+  allow $1 $2:file { read write open };
+')
